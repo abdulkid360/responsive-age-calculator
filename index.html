@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media-query.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+<div class="container">
+  <div class="inner-container">
+    <form action="" id="my-form">
+      <div class="my-form">
+        <div class="form-group">
+          <label for="day" class="form-label">Day</label>
+          <input type="number" class="form-input" name="day" id="day" placeholder="DD">
+          <span class="error"></span>
+        </div>
+        <div class="form-group">
+          <label for="month" class="form-label">Month</label>
+          <input type="number" class="form-input" name="month" id="month" placeholder="MM">
+          <span class="error"></span>
+        </div>
+        <div class="form-group">
+          <label for="year" class="form-label">Year</label>
+          <input type="number" class="form-input" name="year" id="year" placeholder="YYYY">
+          <span class="error"></span>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button type="submit" id="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </button>
+      </div>
+    </form>
+    <div class="results">
+      <h2 class="result year-result"><span class="dash dash-year">-- </span>years</h2>
+      <h2 class="result month-result"><span class="dash dash-month">-- </span>months</h2>
+      <h2 class="result day-result"><span class="dash dash-day">-- </span>days</h2>
+    </div>
+  </div>
+</div>
+<script src="calculator.js"></script>
+</body>
+</html>
